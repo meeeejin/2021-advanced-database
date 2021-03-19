@@ -3,7 +3,7 @@
 ## Overview
 
 - Release Date: Monday, March 22
-- **Due Date: @ 11:59pm**
+- **Due Date: Sunday, April 4 @ 11:59pm**
 - If you have any questions, please contact me via email (Mijin An / meeeeejin@gmail.com)
 
 > NOTE: This lab is based on the Linux environment. If you don't have a Linux machine, use [VirturalBox](https://www.virtualbox.org/). (Recommend Ubuntu 18.04)
@@ -30,8 +30,12 @@
     | CPU         | Intel(R) Xeon(R) Silver 4216 CPU @ 2.10GHz (Total 32 cores)|
     | Memory      | 32GB                                                       |
     | Kernel      | 5.4.0-66-generic                                           |
-    | Data Device | Intel® Optane™ SSD 900P Series 480GB                       |
-    | Log Device  | Samsung 850 PRO SSD 256GB                                  |
+    | Data Device *(Optional)* | Intel® Optane™ SSD 900P Series 480GB          |
+    | Log Device *(Optional)* | Samsung 850 PRO SSD 256GB                      |
+
+    - If you didn't mount any device, specify the device's name on which the root file system is mounted
+        1. Check your device using `mount | grep "on / type"`
+        2. Then, find the device model name using `sudo smartctl -a /dev/sda1` for SATA devices and `sudo nvme list` for NVMe devices
 
     2. Specify the experimental setup of MySQL and TPC-C in the report. For example:
 

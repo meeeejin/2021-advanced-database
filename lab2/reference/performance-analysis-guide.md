@@ -141,7 +141,9 @@ STOPPING THREADS................................................................
                  3634.300 TpmC
 ```
 
-- Note the `TpmC` value 
+- Note the `TpmC` value
+- The metric for evaluating TPC-C performance is the number of transactions completed per minute (TpmC)
+- In the example above, the `TpmC = 3634`. And it means that 3634 *New-Order* transactions were processed per minute
 
 ## Monitoring I/O status using `iostat`
 
@@ -173,6 +175,8 @@ sdc               0.00     0.00    0.00    0.00     0.00     0.00     0.00     0
 ```
 
 - Note each value of `iostat` of your data device
+  - Especially, `r/s`, `w/s`, `rMB/s`, `wMB/s`, `%util`, `avg-cpu`
+  - [More details](https://man7.org/linux/man-pages/man1/iostat.1.html)
 
 ## Monitoring MySQL's Buffer Hit Rate
 
@@ -205,7 +209,7 @@ Pages made young 0, not young 36985
 0.00 youngs/s, 2465.50 non-youngs/s
 Pages read 576950, created 160, written 177
 38431.37 reads/s, 0.13 creates/s, 11.13 writes/s
-Buffer pool hit rate 6 / 1000, young-making rate 0 / 1000 not 63 / 1000
+Buffer pool hit rate 986 / 1000, young-making rate 0 / 1000 not 63 / 1000
 Pages read ahead 0.00/s, evicted without access 3444.10/s, Random read ahead 0.00/s
 LRU len: 524287, unzip_LRU len: 0
 I/O sum[0]:cur[0], unzip sum[0]:cur[0]
@@ -213,3 +217,5 @@ I/O sum[0]:cur[0], unzip sum[0]:cur[0]
 ```
 
 - Note the `Buffer pool hit rate` metric
+  - It means *the buffer pool page hit rate for pages read from the buffer pool vs. from disk storage*
+  - In the example above, `buffer pool hit rate = 0.986`
