@@ -18,11 +18,11 @@
 
 - Follow the [installation guide](reference/tpcc-mysql-install-guide.md) to install and run TPC-C benchmark on MySQL 5.7
 
-### 2. Collect performance metrics 
+### 2. Run the TPC-C benchmark and collect performance metrics 
 
 - Refer to the [performance analysis guide](reference/performance-analysis-guide.md) to gather performance metrics while running the TPC-C benchmark on MySQL 5.7
 - **Follow the instructions below to fill out and submit a report**
-    1. Check your system's spec by referring to the [guide](reference/performance-analysis-guide.md) and specify it in the report. For example:
+    1. Check your system's spec by referring to this [guide](reference/performance-analysis-guide.md) and specify it in the report. For example:
 
     | Type | Specification |
     |:-----------:|:----------------------------------------------------------:|
@@ -33,7 +33,7 @@
     | Data Device | Intel® Optane™ SSD 900P Series 480GB                       |
     | Log Device  | Samsung 850 PRO SSD 256GB                                  |
 
-    2. Specify the experimental environment of MySQL and TPC-C. For example:
+    2. Specify the experimental setup of MySQL and TPC-C in the report. For example:
 
     | Type | Configuration |
     |:----------------:|:----------------------:|
@@ -49,7 +49,12 @@
     
     5. After the benchmark ends, take a screenshot of the TPC-C output and add it to your report
 
-    6. Combine all the results and analyze how the change in buffer pool size affected MySQL and the overall system's performance. Also, compare how I/O performance metrics change and draw your own conclusions
+### 3. Analyze the benchmark results
+
+- Combine all the results and analyze how the change in buffer pool size affected MySQL and the overall system's performance
+    - For example, draw a graph (e.g., Transaction throughput, IOPS, etc.) and compare the performance:
+    ![tpcc-graph](https://www.percona.com/blog/wp-content/uploads/2013/06/tpcc-graph1.jpg)
+- Also, compare how I/O performance metrics change and draw your own conclusions
 
 ## Submission
 
