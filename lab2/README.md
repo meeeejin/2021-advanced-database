@@ -54,7 +54,8 @@
 - Combine all the results and analyze how the change in buffer pool size affected MySQL and the overall system's performance
     - For example, draw a graph (e.g., Transaction throughput, IOPS, etc.) and compare the performance:
     ![tpcc-graph](https://www.percona.com/blog/wp-content/uploads/2013/06/tpcc-graph1.jpg)
-- Also, compare how I/O performance metrics change and draw your own conclusions
+- Also, compare how I/O performance metrics change depending on the buffer size and understand what they mean
+- Finally, draw your own conclusions about the benchmark results
 
 ## Submission
 
