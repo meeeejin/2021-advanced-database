@@ -14,16 +14,17 @@
 
 - If you have more than one storage device on your PC, read and try [this guide](reference/mount-guide.md) to separate data and log devices
 
-### Install MySQL 5.7 and TPC-C
+### 1. Install MySQL 5.7 and TPC-C
 
 - Follow the [installation guide](reference/tpcc-mysql-install-guide.md) to install and run TPC-C benchmark on MySQL 5.7
 
-### Collect performance metrics 
+### 2. Collect performance metrics 
 
 - Refer to the [performance analysis guide](reference/performance-analysis-guide.md) to gather performance metrics while running the TPC-C benchmark on MySQL 5.7
 - **Follow the instructions below to fill out and submit a report**
     1. Check your system's spec by referring to the [guide](reference/performance-analysis-guide.md) and specify it in the report. For example:
 
+    | Type | Specification |
     |:-----------:|:----------------------------------------------------------:|
     | OS          | Ubuntu 18.04.5 LTS                                         |
     | CPU         | Intel(R) Xeon(R) Silver 4216 CPU @ 2.10GHz (Total 32 cores)|
@@ -34,6 +35,7 @@
 
     2. Specify the experimental environment of MySQL and TPC-C. For example:
 
+    | Type | Configuration |
     |:----------------:|:----------------------:|
     | DB size          | 2GB (20 warehouse)     |
     | Buffer Pool Size | 500MB, 1GB (25% and 50% of DB size, respectively) |
