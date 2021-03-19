@@ -158,6 +158,8 @@ innodb_flush_neighbors=0
 innodb_flush_method=O_DIRECT
 ```
 
+- [MySQL 5.7 Server System Variable Reference](https://dev.mysql.com/doc/refman/5.7/en/server-system-variable-reference.html)
+
 9. Shut down the MySQL server and restart it with `my.cnf`:
 
 ```bash
@@ -343,3 +345,4 @@ Where:
 - [Build and install the source code (5.7)](https://github.com/meeeejin/til/blob/master/mysql/build-and-install-the-source-code-5.7.md)
 - [Percona-Lab/tpcc-mysql](https://github.com/Percona-Lab/tpcc-mysql)
 - [tpcc-mysql: Simple usage steps and how to build graphs with gnuplot](https://www.percona.com/blog/2013/07/01/tpcc-mysql-simple-usage-steps-and-how-to-build-graphs-with-gnuplot/)
+- [MySQL 5.7 Server System Variable Reference](https://dev.mysql.com/doc/refman/5.7/en/server-system-variable-reference.html)
