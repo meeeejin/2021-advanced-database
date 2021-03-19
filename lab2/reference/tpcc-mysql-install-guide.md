@@ -158,7 +158,7 @@ innodb_flush_neighbors=0
 innodb_flush_method=O_DIRECT
 ```
 
-- [MySQL 5.7 Server System Variable Reference](https://dev.mysql.com/doc/refman/5.7/en/server-system-variable-reference.html)
+For details on each variable, refer to [MySQL 5.7 Server System Variable](https://dev.mysql.com/doc/refman/5.7/en/server-system-variable-reference.html)
 
 9. Shut down the MySQL server and restart it with `my.cnf`:
 
